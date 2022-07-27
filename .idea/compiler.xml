@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="RickandMorty.app" target="11" />
+      <module name="RickandMorty.data" target="11" />
+      <module name="RickandMorty.features.functions" target="11" />
+      <module name="RickandMorty.features.list" target="11" />
+      <module name="RickandMorty.features.lists" target="11" />
+      <module name="RickandMorty.presentation" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

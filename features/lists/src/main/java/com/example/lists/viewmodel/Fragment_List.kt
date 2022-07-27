@@ -36,8 +36,6 @@ private lateinit var viewModel: CharacterViewModel
 
         })
 
-
-
     }
 
 

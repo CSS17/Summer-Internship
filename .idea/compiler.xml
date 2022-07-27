@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="RickandMorty.app" target="11" />
       <module name="RickandMorty.data" target="11" />
+      <module name="RickandMorty.features.filter" target="11" />
       <module name="RickandMorty.features.functions" target="11" />
       <module name="RickandMorty.features.list" target="11" />
       <module name="RickandMorty.features.lists" target="11" />

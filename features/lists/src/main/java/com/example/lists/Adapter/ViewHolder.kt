@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import com.example.lists.R
@@ -21,9 +20,9 @@ class ViewHolder (container: ViewGroup, layout: Int) : RecyclerView.ViewHolder(
     )
 ) {
     val profileLink: ImageView = itemView.findViewById(R.id.imgProfilePhoto)
-    val txtname: TextView = itemView.findViewById(R.id.name)
-    val txtlocation: TextView = itemView.findViewById(R.id.location)
-    val txtstatus: TextView = itemView.findViewById(R.id.status)
+    val txtName: TextView = itemView.findViewById(R.id.name)
+    val txtLocation: TextView = itemView.findViewById(R.id.location)
+    val txtStatus: TextView = itemView.findViewById(R.id.status)
 
     fun getCharacter():CharacterViewModel{
         return viewModel
@@ -31,9 +30,9 @@ class ViewHolder (container: ViewGroup, layout: Int) : RecyclerView.ViewHolder(
 
 
     fun bind(characteritem: Result) {
-        txtname.text = characteritem.name
+        txtName.text = characteritem.name
         profileLink.load(characteritem.image)
-        txtlocation.text = characteritem.location.name
-        txtstatus.text=characteritem.status
+        txtLocation.text = characteritem.location.name
+        txtStatus.text=characteritem.status
     }
 }

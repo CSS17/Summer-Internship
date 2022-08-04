@@ -17,7 +17,7 @@ class CharacterViewModel: ViewModel(){
     val users: LiveData<Character>
         get() = _characters
 
-    private var _alive_characters = MutableLiveData<Character>()
+   private var _alive_characters = MutableLiveData<Character>()
     val alive_characters: LiveData<Character>
         get() = _alive_characters
 

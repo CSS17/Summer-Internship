@@ -12,7 +12,6 @@ import java.util.logging.Filter
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: CharacterViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -26,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         val fragment = ListFragment()
         fragment.arguments = bundle
+
 
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frameLayout, fragment)

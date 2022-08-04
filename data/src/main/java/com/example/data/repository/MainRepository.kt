@@ -1,15 +1,25 @@
 package com.example.data.repository
 
-import com.example.data.network.service.RetrofitApi
-import com.example.data.network.service.Retrofit_alive
-import com.example.data.network.service.Retrofit_dead
-import com.example.data.network.service.Retrofit_unknown
+import com.example.data.network.service.*
+import com.example.rickandmorty.models.Character
 
-class MainRepository constructor(private val retrofitService: RetrofitApi) {
-    companion object {
-        suspend fun getAllCharacters() = RetrofitApi.retrofitInstance.getCharacterData()
-        suspend fun getAliveCharacters()=Retrofit_alive.retrofitInstance.getAlives()
-        suspend fun getDeadCharacters()=Retrofit_dead.retrofitInstance.getDeads()
-        suspend fun getUnknownCharacters()=Retrofit_unknown.retrofitInstance.getUnknowns()
+class MainRepository {
+    companion object{
+        suspend fun getAllCharacters():Character{
+            return RetrofitInstance.retrofitInstance.getCharacterData()
+        }
+        suspend fun getAliveCharacters():Character{
+            return RetrofitInstance.retrofitInstance.getAliveCharacterData()
+        }
+        suspend fun getDeadCharacters():Character{
+            return RetrofitInstance.retrofitInstance.getDeadCharacterData()
+        }
+        suspend fun getUnknownCharacters():Character{
+            return RetrofitInstance.retrofitInstance.getUnknownCharacterData()
+        }
+
     }
+
+
+
 }

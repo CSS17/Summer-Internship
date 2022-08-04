@@ -12,16 +12,15 @@ import retrofit2.http.GET
 interface RetrofitApi {
     @GET("api/character?page=8")
     suspend fun getCharacterData():Character
-    companion object {
-        private val retrofit = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl(Constants.BASE_URL)
-            .build()
 
-        val retrofitInstance: RetrofitApi by lazy {
-            retrofit.create(RetrofitApi::class.java)
-        }
-    }
+    @GET("https://rickandmortyapi.com/api/character/?status=alive")
+    suspend fun getAliveCharacterData():Character
+
+    @GET("https://rickandmortyapi.com/api/character/?status=dead")
+    suspend fun getDeadCharacterData():Character
+
+     @GET("https://rickandmortyapi.com/api/character/?status=unknown")
+    suspend fun getUnknownCharacterData():Character
 
 
 }

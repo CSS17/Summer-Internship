@@ -2,7 +2,7 @@ package com.example.lists.Adapter
 
 
 
-enum class status_type(val status_type: String) {
+enum class StatusType(val StatusType: String) {
     ALIVE("Alive"),
     DEAD("Dead"),
     UNKNOWN("Unknown")

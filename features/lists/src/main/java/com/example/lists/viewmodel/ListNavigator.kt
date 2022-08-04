@@ -1,4 +1,4 @@
-package com.example.lists
+package com.example.lists.viewmodel
 
 interface ListNavigator {
     fun navigateFilter()

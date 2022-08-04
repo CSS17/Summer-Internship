@@ -13,13 +13,13 @@ interface RetrofitApi {
     @GET("api/character?page=8")
     suspend fun getCharacterData():Character
 
-    @GET("https://rickandmortyapi.com/api/character/?status=alive")
+    @GET("api/character/?status=alive")
     suspend fun getAliveCharacterData():Character
 
-    @GET("https://rickandmortyapi.com/api/character/?status=dead")
+    @GET("api/character/?status=dead")
     suspend fun getDeadCharacterData():Character
 
-     @GET("https://rickandmortyapi.com/api/character/?status=unknown")
+     @GET("api/character/?status=unknown")
     suspend fun getUnknownCharacterData():Character
 
 

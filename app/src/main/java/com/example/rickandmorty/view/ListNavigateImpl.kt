@@ -2,7 +2,7 @@ package com.example.rickandmorty.view
 
 import androidx.fragment.app.FragmentActivity
 import com.example.filter.FilterFragment
-import com.example.lists.ListNavigator
+import com.example.lists.viewmodel.ListNavigator
 import com.example.rickandmorty.R
 import java.io.Serializable
 

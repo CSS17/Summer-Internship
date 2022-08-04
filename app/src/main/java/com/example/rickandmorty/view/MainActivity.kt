@@ -3,11 +3,8 @@ package com.example.rickandmorty.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.filter.FilterFragment
-import com.example.lists.ListFragment
+import com.example.lists.viewmodel.ListFragment
 import com.example.rickandmorty.R
-import com.example.presentation.viewmodel.CharacterViewModel
-import java.util.logging.Filter
 
 
 class MainActivity : AppCompatActivity() {
